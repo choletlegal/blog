@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<article class="post">
+    <header class="post-header">
+        <h2>{{ page.title }}</h2>
+        <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">
+            {{ page.date | date: "%d %B %Y" }}
+        </time>
+    </header>
+    
+    <div class="post-content">
+        {{ content }}
+    </div>
+    
+    <footer class="post-footer">
+        <p>Publié par {{ page.author | default: site.author }}</p>
+        {% if page.category %}
+        <p>Catégorie: {{ page.category }}</p>
+        {% endif %}
+    </footer>
+</article>
+
+<a href="/" class="back-link">← Retour à l'accueil</a>

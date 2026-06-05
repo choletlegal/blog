@@ -1,0 +1,23 @@
+---
+layout: default
+title: Accueil
+---
+
+<h2>Nos articles</h2>
+
+<div class="posts-grid">
+    {% for post in site.posts %}
+    <article class="post-card">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">
+            {{ post.date | date: "%d/%m/%Y" }}
+        </time>
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+        <a href="{{ post.url | relative_url }}" class="read-more">Lire l'article →</a>
+    </article>
+    {% endfor %}
+</div>
+
+{% if site.posts.size == 0 %}
+<p class="no-posts">Aucun article publié pour le moment.</p>
+{% endif %}

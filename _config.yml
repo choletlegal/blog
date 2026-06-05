@@ -1,0 +1,45 @@
+# Configuration Jekyll pour le blog
+# https://jekyllrb.com/docs/configuration/
+
+# Informations du site
+title: Cholet Legal Blog
+description: >-
+  Un blog simple pour partager des articles juridiques
+baseurl: ""
+url: "https://choletlegal.github.io/blog"
+
+# Paramètres de build
+markdown: kramdown
+theme: null
+plugins: []
+
+# Dossiers
+source: .
+destination: ./_site
+
+# Exclusions
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Paramètres par défaut pour les articles
+defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      author: Cholet Legal
+      category: blog
+
+# Ordre des articles (du plus récent au plus ancien)
+posts_sort: "date:desc"
+
+# Pagination (si besoin plus tard)
+paginate: 5
+paginate_path: "/page:num/"
