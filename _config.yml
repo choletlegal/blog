@@ -11,6 +11,7 @@ url: "https://choletlegal.github.io"
 # Paramètres de build
 markdown: kramdown
 theme: null
+permalink: /:year/:month/:day/:title.html
 
 # Dossiers
 source: .
@@ -32,7 +33,6 @@ defaults:
     values:
       layout: post
       author: Cholet Legal
-      category: blog
 
 # Ordre des articles (du plus récent au plus ancien)
 posts_sort: "date:desc"

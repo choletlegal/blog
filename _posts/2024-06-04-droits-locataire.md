@@ -2,7 +2,6 @@
 layout: post
 title: "Quels sont les droits du locataire en 2024 ?"
 date: 2024-06-04 14:30:00 +0200
-category: immobilier
 author: Cholet Legal
 excerpt: "Tour d'horizon des droits fondamentaux des locataires en France cette année."
 ---

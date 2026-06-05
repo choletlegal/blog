@@ -2,7 +2,6 @@
 layout: post
 title: "Divorce : quelles sont les différentes procédures ?"
 date: 2024-06-03 09:15:00 +0200
-category: famille
 author: Cholet Legal
 excerpt: "Guide complet des différentes procédures de divorce en France et leurs spécificités."
 ---

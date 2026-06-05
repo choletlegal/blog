@@ -2,7 +2,6 @@
 layout: post
 title: "Comment bien choisir son avocat ?"
 date: 2024-06-05 10:00:00 +0200
-category: conseils
 author: Cholet Legal
 excerpt: "Découvrez nos conseils pour sélectionner l'avocat qui correspond le mieux à vos besoins juridiques."
 ---
