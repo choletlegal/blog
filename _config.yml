@@ -7,12 +7,10 @@ description: >-
   Un blog simple pour partager des articles juridiques
 baseurl: "/blog"
 url: "https://choletlegal.github.io"
-permalink: /:categories/:year/:month/:day/:title.html
 
 # Paramètres de build
 markdown: kramdown
 theme: null
-plugins: []
 
 # Dossiers
 source: .
@@ -23,10 +21,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  - vendor/
+  - .github/
 
 # Paramètres par défaut pour les articles
 defaults:
@@ -40,7 +36,3 @@ defaults:
 
 # Ordre des articles (du plus récent au plus ancien)
 posts_sort: "date:desc"
-
-# Pagination (si besoin plus tard)
-paginate: 5
-paginate_path: "/page:num/"
