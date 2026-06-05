@@ -5,8 +5,8 @@
 title: Cholet Legal Blog
 description: >-
   Un blog simple pour partager des articles juridiques
-baseurl: ""
-url: "https://choletlegal.github.io/blog"
+baseurl: "/blog"
+url: "https://choletlegal.github.io"
 permalink: /:categories/:year/:month/:day/:title.html
 
 # Paramètres de build

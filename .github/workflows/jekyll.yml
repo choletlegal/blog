@@ -3,7 +3,7 @@ name: Deploy Jekyll site to GitHub Pages
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
+      - main
   pull_request:
 
 jobs:
@@ -28,13 +28,13 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: true
       
-      - name: Install dependencies
+      - name: Install Jekyll
         run: |
-          gem install bundler
+          gem install jekyll bundler
           bundle install
       
       - name: Build Jekyll site
-        run: bundle exec jekyll build
+        run: bundle exec jekyll build --baseurl "/blog"
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
